@@ -1,0 +1,194 @@
+:root {
+    
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'cinzel';
+}
+html {
+    scroll-behavior: smooth;
+  }
+.container {
+    max-width: 1300px;
+    width: 96%;
+    margin: 0 auto;
+}
+.await{
+    transition: all .5s ease-in-out;
+}
+/************** Menu *******************/
+header{
+    position: fixed;
+    z-index: 998;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    color: white;
+    transition: 1.5s;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+header .logo h1{
+    font-weight: 500;
+}
+header .desktop{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.desktop a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    font-weight: 500;
+    transition:transform .3s ease-in-out;
+}
+.desktop a:hover{
+    transform: scale(1.1);
+    color: white;
+}
+
+.desktop a::after {
+    content: '';
+    width: 100%; /* Começa com 100% da largura do link */
+    height: 2px; /* Altura do sublinhado */
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 50%; 
+    transform: translateX(-50%) scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 50%;
+
+}
+
+.desktop a:hover::after {
+    transform: translateX(-50%) scaleX(1); 
+}
+/************** INTRO ******************/
+
+#piramide_img{
+    z-index: 999;
+    min-height: 100%;
+    background-color: rgba(133, 95, 14, 0.485);
+    top: 0;
+    position: absolute;
+    background-image: url('../assets/svg/Piramides2.svg');
+    background-size: 150%;
+    background-position:58% 45.5%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    transition: all 1.5s ease;
+}
+#piramide_img.sticky{
+    background-color: transparent;
+    background-position:53.5% 40.5%;
+    background-size: 2500%;
+    z-index: -1;
+    
+}
+
+#piramide_img.sticky #intro{
+    opacity: 0;
+    color: transparent;
+    z-index: -1;
+}
+#intro{
+    transition: .5s ease;
+    margin-top: 55vh;
+    text-align: center;
+    font-size: 12rem;
+    background-image: url('https://hypescience.com/wp-content/uploads/2010/10/piramides.jpg');
+    font-family: 'cinzel';
+    font-weight: 600;
+    background-size: 100%;
+    background-position:30% 45.5%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:rgba(133, 95, 14, 0.485);
+}
+/*************** HERO *****************/
+.banner{
+    max-width: 100%;
+    height: 120vh;
+    position: relative;
+}
+.egito_img{
+    background-image: url('https://hypescience.com/wp-content/uploads/2010/10/piramides.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.egito_img::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hero .container{
+    padding: 0;
+    min-height: 120vh;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero .container .content{
+    width: 50%;
+    color: rgb(221, 219, 219);
+    position: relative;
+}
+.hero .container .content::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+}
+.hero .container .bandeira_hero{
+    width: 35%;
+    height: 100%;
+
+}
+.hero .container .bandeira_hero img{
+    width: 100%;   
+   
+}
+.hero .container h1{
+    font-size: 15rem; 
+    position: relative;
+    left: -20px; 
+}
+.hero .container h2{
+    font-size: 2.5rem;
+}
+/***************   Section 1 ******************/
+.first_section{
+    height: 100vh;
+    width: 100%;
+    background-color: brown;
+}
+/***************** Section 2**********************/
+.second_section{
+    height: 100vh;
+    width: 100%;
+    background-color: burlywood;
+}
+/***************** Section 2**********************/
+.third_section{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(175, 119, 45);
+}
