@@ -27,6 +27,7 @@ header{
     backdrop-filter: blur(50px);
     color: white;
     transition: 1.5s;
+    opacity: 0;
 }
 header .container{
     display: flex;
@@ -136,6 +137,7 @@ header .desktop{
     left: 0;
 }
 .hero .container{
+    opacity: 0;
     padding: 0;
     min-height: 120vh;
     position: relative;

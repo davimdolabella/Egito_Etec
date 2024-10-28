@@ -23,7 +23,7 @@ function applyToAllAwaitElements(callback) {
 window.addEventListener("scroll", function() {
     nav.classList.toggle('sticky', window.scrollY > 0);
     applyToAllAwaitElements(element => {
-        if (window.scrollY < 1) {
+        if (window.scrollY == 0) {
             element.style.opacity = 0;
         } else {
             element.style.opacity= 1;
