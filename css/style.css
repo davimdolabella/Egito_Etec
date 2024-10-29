@@ -13,11 +13,13 @@
 }
 html {
     scroll-behavior: smooth;
+    user-select: none;
   }
 .container {
     max-width: 1300px;
     width: 96%;
     margin: 0 auto;
+    
 }
 .await{
     transition: all .5s ease-in-out;
@@ -86,6 +88,18 @@ header .desktop{
     transform: translateX(-50%) scaleX(1);
     
 }
+.mobile{
+    display: none;
+}
+.mobile .menu{
+    display: none;
+}
+.mobile .icon{
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border-radius: 50%;
+}
 /************** INTRO ******************/
 
 #piramide_img{
@@ -142,6 +156,7 @@ header .desktop{
 }
 .egito_img::before{
     content: '';
+    z-index: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
@@ -149,56 +164,33 @@ header .desktop{
     top: 0;
     left: 0;
 }
-.egito_img::after{
-    content: '';
-    z-index: 996;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.hero .container{
-    opacity: 0;
-    padding: 0;
+
+ .hero .container{
     min-height: 120vh;
-    position: relative;
     z-index: 2;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-}
+    justify-content: center;
+    overflow-wrap: break-word;
+ }
+ .hero .container .content{
+    color: white;
+    z-index: 2;
+ }
 
-.hero .container .content{
-    width: 50%;
-    color: rgb(255, 255, 255);
-    position: relative;
-}
-.hero .container .content::before{
-    content: '';
+ .bandeira_hero img{
     width: 100%;
-    height: 100%;
-    position: absolute;
-    
-}
-.hero .container .bandeira_hero{
-    width: 35%;
-    height: 100%;
-
-}
-.hero .container .bandeira_hero img{
-    width: 100%;   
-   
-}
-.hero .container h1{
-    font-size: 15rem; 
+ }
+ .hero .container .content .text h1{
+    font-size: 10rem;
     position: relative;
-    left: -20px; 
-}
-.hero .container h2{
-   
-    font-size: 2.5rem;
-}
+    left: -10px;
+ }
+ .hero .container .content .text h2{
+    font-size: 2rem;
+    font-weight: 100;
+ }
 /***************   Section 1 ******************/
 .first_section{
     height: 100vh;
@@ -246,4 +238,42 @@ header .desktop{
     height: 100vh;
     width: 100%;
     background-color: rgb(175, 119, 45);
+}
+/***************** Media query *******************/
+@media  screen and (max-width:1200px) {
+    /************ Menu ******************/
+    .container .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    /************ Hero ******************/
+    .hero .container .content .text h1{
+        font-size: 7rem;
+        position: relative;
+        left: -10px;
+     }
+}
+@media  screen and (max-width:800px) {
+    body .container{
+        padding:1.5rem;
+    }
+    /************ Hero ******************/
+    .hero .container .content .text h1{
+        font-size: 5rem;
+        position: relative;
+        left: 0;
+     }
+     .bandeira_hero, .text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+     .text{
+        flex-direction: column;
+     }
+     .bandeira_hero img{
+        width: 100%;
+     }
 }
