@@ -108,7 +108,15 @@ header .desktop{
     gap: 2rem;
     top: 107.5px;
     right: 0;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 1s ease;
+}
+.menu.menu_animation {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
 }
 .menu a {
     color: white;

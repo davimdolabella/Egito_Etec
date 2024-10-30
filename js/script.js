@@ -1,3 +1,5 @@
+const icon = document.getElementById('icon_mobile');
+const menu = document.getElementById('menu_mobile');
 const nav = document.getElementById('piramide_img');
 window.addEventListener('wheel', function(event) {
     let currentScroll = window.scrollY;
@@ -29,7 +31,15 @@ window.addEventListener("scroll", function() {
             element.style.opacity= 1;
         }
     });
+    if(menu.style.opacity == '0'){
+      menu.classList.toggle('menu_animation', window.scrollY > 0)
+    }
 });
+/** Menu **/
 
+
+icon.onclick = () =>{
+   menu.classList.toggle('menu_animation')
+}
 
 
