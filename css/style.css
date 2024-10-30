@@ -29,6 +29,7 @@ html {
     src: url('../fonts/Cinzel/Cinzel-VariableFont_wght.ttf');
 }
 /************** Menu *******************/
+
 header{
     position: fixed;
     z-index: 998;
@@ -88,13 +89,60 @@ header .desktop{
     transform: translateX(-50%) scaleX(1);
     
 }
-.mobile{
-    display: none;
+/*****************************************/
+header .menu{
+    background-color: rgba(0, 0, 0, 0.101);
+    backdrop-filter: blur(50px);
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    height: calc(100vh - 107px);
+    gap: 2rem;
+    top: 107.5px;
+    right: 0;
+    
 }
-.mobile .menu{
-    display: none;
+.menu a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    font-weight: 500;
+    transition:transform .3s ease;
 }
+.menu a:hover{
+    transform: scale(1.1);
+    color: white;
+}
+
+.menu a::after {
+    content: '';
+    width: 100%;
+    height: 2px; 
+    background-color: var(--color-4);
+    position: absolute;
+    top: 100%;
+    left: 50%; 
+    transform: translateX(-50%) scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 50%;
+
+}
+
+.menu a:hover::after {
+    transform: translateX(-50%) scaleX(1); 
+}
+.menu .current::after{
+    content: '';
+    transform: translateX(-50%) scaleX(1);
+    
+}
+
 .mobile .icon{
+    z-index: 998;
     width: 60px;
     height: 60px;
     background-color: red;
