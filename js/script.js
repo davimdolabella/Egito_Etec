@@ -33,6 +33,7 @@ window.addEventListener("scroll", function() {
     });
     if(menu.style.opacity == '0'){
       menu.classList.toggle('menu_animation', window.scrollY > 0)
+      icon.classList.toggle('icon_animation', window.scrollY > 0)
     }
 });
 /** Menu **/
@@ -40,6 +41,7 @@ window.addEventListener("scroll", function() {
 
 icon.onclick = () =>{
    menu.classList.toggle('menu_animation')
+   icon.classList.toggle('icon_animation')
 }
 
 
