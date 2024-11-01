@@ -2,7 +2,7 @@
     --color-1: #8C2703;
     --color-2: #D9753B;
     --color-3: #C27638;
-    --color-4: #fcfaca;
+    --color-4: #f8f6c0;
     --color-5: #400101;
 }
 *{
@@ -285,15 +285,16 @@ header .desktop{
  }
 /***************   Section 1 ******************/
 .first_section{
-    height: 100vh;
+    padding: 10rem 0;
     width: 100%;
     background-color: var(--color-3);
     position: relative;
+    z-index: 10;
 }
 .first_section::before {
     content: "";
     position: absolute;
-    background-image: linear-gradient( transparent,var(--color-3));
+    background-image: linear-gradient( transparent,#A1622E);
     top: -120px;
     height: 120px;
     width: 100%;
@@ -301,27 +302,38 @@ header .desktop{
 .first_section::after {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.171);
     top: 0;
     z-index: -1;
     height: 100%;
     width: 100%;
 }
 .first_section .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    overflow: hidden;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0;
+    padding-left: 2%;
+    border-radius: 10px;
+    color: rgb(238, 237, 237);
 }
-.first_section .container h2{
-    margin-top: 5rem;
-    font-size: 5rem;
-    color: var(--color-4);
+.first_section .text{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    color: rgb(238, 237, 237);
+}
+.first_section .text h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.first_section .text p{
+    font-size: 1.1rem;
 }
 .capital{
+    color: white;
     position: relative;
-    width: 400px;
+    min-width: 40%;
     height: 400px;
     background-color: white;
     background-image: url('../assets/images/capital.jpg');
@@ -329,7 +341,17 @@ header .desktop{
     animation: capital 40s linear alternate infinite;
     overflow: hidden;
 }
-.capital::before{
+
+.capital::before {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(-90deg, transparent,#AB7243);
+    left: 0;
+    height: 100%;
+    width: 100px;
+}
+.capital::after{
     transition: .5s ease;
     z-index: 1;
     content: '';
@@ -342,7 +364,8 @@ header .desktop{
     font-size: 1.5rem;
     opacity: 0;
 }
-.capital:hover::before{
+.capital:hover::after{
+    width: 110%;
     background-color: rgba(0, 0, 0, 0.211);
     backdrop-filter: blur(7px);
 }
@@ -371,6 +394,26 @@ header .desktop{
 }
 /***************** Media query *******************/
 @media  screen and (max-width:1200px) {
+    /************INTRO *******************/
+    #piramide_img{
+        z-index: 999;
+        min-height: 100%;
+        background-color: rgba(133, 95, 14, 0.485);
+        top: 0;
+        position: fixed;
+        background-image: url('../assets/svg/Piramides2.svg');
+        background-size: 150%;
+        background-position:58% 45.5%;
+        background-repeat: repeat;
+        width: 100%;
+        height: 101vh;
+        transition: all 1.5s ease;
+    }
+    #intro{
+        font-size: 8rem;
+        margin-top: 50vh;
+        
+    }
     /************ Menu ******************/
     .container .desktop{
         display: none;
@@ -390,21 +433,6 @@ header .desktop{
         padding:1.5rem;
     }
     /************* INTRO ***************/
-        
-    #piramide_img{
-        z-index: 999;
-        min-height: 100%;
-        background-color: rgba(133, 95, 14, 0.485);
-        top: 0;
-        position: fixed;
-        background-image: url('../assets/svg/Piramides2.svg');
-        background-size: 150%;
-        background-position:58% 45.5%;
-        background-repeat: repeat;
-        width: 100%;
-        height: 101vh;
-        transition: all 1.5s ease;
-    }
     #piramide_img.sticky{
         background-size: 3500%;
     }
@@ -412,8 +440,6 @@ header .desktop{
     
     #intro{
         font-size: 6rem;
-        margin-top: 50vh;
-        
     }
     /************ Hero ******************/
     .hero .container .content .text h1{
@@ -437,4 +463,10 @@ header .desktop{
      .bandeira_hero img{
         width: 100%;
      }
+}
+@media screen and (max-height:520px) {
+    .menu{
+        padding: 4rem;
+        gap: 1rem;
+    }
 }
