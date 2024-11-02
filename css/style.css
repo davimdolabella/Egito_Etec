@@ -330,6 +330,11 @@ header .desktop{
 .first_section .text p{
     font-size: 1.1rem;
 }
+.first_section .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .capital{
     color: white;
     position: relative;
@@ -349,7 +354,7 @@ header .desktop{
     background-image: linear-gradient(-90deg, transparent,#AB7243);
     left: 0;
     height: 100%;
-    width: 80px;
+    width: 15px;
 }
 .capital::after{
     transition: .5s ease;
@@ -427,6 +432,74 @@ header .desktop{
         position: relative;
         left: -10px;
      }
+     /*********** First_section *****/
+     .first_section .container{
+        overflow: hidden;
+        z-index: 2;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 0;
+        padding-left: 2%;
+        border-radius: 10px;
+        color: rgb(238, 237, 237);
+    }
+    .first_section .text{
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 2rem;
+        border-radius: 10px;
+        color: rgb(238, 237, 237);
+    }
+    .first_section .text h2{
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    .first_section .text p{
+        font-size: 1.1rem;
+    }
+    .first_section .content{
+        flex-direction: column;
+    }
+    .capital{
+        color: white;
+        position: relative;
+        width: 100px;
+        height: 200px;
+        background-color: white;
+        background-image: url('../assets/images/capital.jpg');
+        background-size: cover;
+        animation: capital 40s linear alternate infinite;
+        overflow: hidden;
+    }
+    
+    .capital::before {
+        z-index: 2;
+        content: "";
+        position: absolute;
+        background-image: linear-gradient(-90deg, transparent,#AB7243);
+        left: 0;
+        height: 100%;
+        width: 15px;
+    }
+    .capital::after{
+        transition: .5s ease;
+        z-index: 1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .capital p{
+        z-index: 2;
+        font-size: 1.5rem;
+        opacity: 0;
+    }
+    .capital:hover::after{
+        width: 110%;
+        background-color: rgba(0, 0, 0, 0.211);
+        backdrop-filter: blur(7px);
+    }
+    .capital:hover p{
+        opacity: 1;
+    }
 }
 @media  screen and (max-width:800px) {
     body .container{
