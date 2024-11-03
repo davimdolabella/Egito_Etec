@@ -311,20 +311,7 @@ header .desktop{
 .first_section .container{
     padding: 0;
 }
-.first_section .text{
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 2rem;
-    border-radius: 10px;
-    color: rgb(238, 237, 237);
-    width: 50%;
-}
-.first_section .text h2{
-    font-size: 2.5rem;
-    font-weight: 500;
-}
-.first_section .text p{
-    font-size: 1.1rem;
-}
+
 .first_section .content{
     display: flex;
     align-items: center;
@@ -336,6 +323,20 @@ header .desktop{
     padding-left: 2%;
     border-radius: 10px;
     color: rgb(238, 237, 237);
+}
+.first_section .text{
+    background-color: rgba(255, 255, 255, 0.085);
+    padding: 2rem;
+    border-radius: 10px;
+    color: rgb(238, 237, 237);
+    width: 50%;
+}
+.first_section .text h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.first_section .text p{
+    font-size: 1.1rem;
 }
 .capital{
     color: white;
@@ -395,22 +396,60 @@ header .desktop{
     position: relative;
     z-index: 10;
 }
-.second_section::before {
-    content: "";
-    position: absolute;
-    background-image: linear-gradient( transparent,#B89870);
-    top: -120px;
-    height: 120px;
-    width: 100%;
-}
+
 .second_section::after {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.171);
+    background-color: rgba(0, 0, 0, 0.068);
     top: 0;
     z-index: -1;
     height: 100%;
     width: 100%;
+}
+.second_section .container{
+    
+}
+.second_section .content{
+    background-color: rgba(255, 255, 255, 0.099);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:5rem 2rem;
+    border-radius: 10px;
+    gap: 5rem;
+}
+.second_section .content h2{
+    font-size: 3rem;
+    font-weight: 400;
+}
+.second_section .content .pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.second_section .single{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.second_section .single .single_img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: red;
+    transition:all .5s ease;
+}
+.second_section .single .single_img:hover{
+    transform: scale(1.1);
 }
 /***************** Section 2**********************/
 .third_section{
