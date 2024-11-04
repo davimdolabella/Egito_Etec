@@ -21,6 +21,13 @@ html {
     margin: 0 auto;
     
 }
+.link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 .await{
     transition: all .5s ease-in-out;
 }
@@ -392,7 +399,7 @@ header .desktop{
 .second_section{
     padding: 10rem 0;
     width: 100%;
-    background-color: burlywood;
+    background-color: rgb(189, 143, 84);
     position: relative;
     z-index: 10;
 }
@@ -406,9 +413,7 @@ header .desktop{
     height: 100%;
     width: 100%;
 }
-.second_section .container{
-    
-}
+
 .second_section .content{
     background-color: rgba(255, 255, 255, 0.099);
     color: white;
@@ -437,17 +442,23 @@ header .desktop{
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    font-size: 1.5rem;
-    cursor: pointer;
+    font-size: 1.3rem;
+    
 }
 
 .second_section .single .single_img{
-    width: 200px;
-    height: 200px;
+    position: relative;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     background-color: red;
     transition:all .5s ease;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .second_section .single .single_img:hover{
     transform: scale(1.1);
 }
@@ -457,6 +468,47 @@ header .desktop{
     width: 100%;
     background-color: rgb(175, 119, 45);
 }
+/**************** Footer **************************/
+footer{
+    width: 100%;
+    background-color: var(--color-1);
+    position: relative;
+}
+footer .container{
+    padding: 3rem;
+    color: rgb(239, 238, 238);
+}
+footer .container .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+footer .container .content .github{
+    background-color: rgba(255, 255, 255, 0.148);
+    padding:.5rem 1rem;
+    border-radius: 30px;
+    display: flex;
+    transition:all .5s ease ;
+    gap: .5rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+footer .container .content .github div{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+   
+    background-image: url('../assets/images/github.webp');
+    background-size: cover;
+    background-position: center;
+}
+footer .container .content .github:hover{
+    transform: scale(1.1);
+}
+
 /***************** Media query *******************/
 @media  screen and (max-width:1200px) {
     /************INTRO *******************/
@@ -536,6 +588,12 @@ header .desktop{
         width: 100%;
         height: 300px;
     }
+    /** Second section**/
+    .second_section .content h2{
+        font-size: 2rem;
+        font-weight: 400;
+        text-align: center;
+    }
 }
 @media  screen and (max-width:800px) {
     body .container{
@@ -572,6 +630,12 @@ header .desktop{
      .bandeira_hero img{
         width: 100%;
      }
+     /***** Footer ********/
+     footer .container .content .text{
+        font-size: 1rem;
+        text-align: center;
+        text-wrap: wrap;
+    }
 }
 @media screen and (max-height:520px) {
     .menu{
