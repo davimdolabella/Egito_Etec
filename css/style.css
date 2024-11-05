@@ -403,7 +403,14 @@ header .desktop{
     position: relative;
     z-index: 10;
 }
-
+.second_section::before{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient( transparent,#B0854E);
+    top: -40px;
+    height: 40px;
+    width: 100%;
+}
 .second_section::after {
     content: "";
     position: absolute;
@@ -462,17 +469,20 @@ header .desktop{
 .second_section .single .single_img:hover{
     transform: scale(1.1);
 }
-/***************** Section 2**********************/
-.third_section{
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(175, 119, 45);
-}
 /**************** Footer **************************/
 footer{
     width: 100%;
     background-color: var(--color-1);
     position: relative;
+}
+footer::before{
+    z-index: 11;
+    content: "";
+    position: absolute;
+    background-image: linear-gradient( transparent,#8C2703);
+    top: -10px;
+    height: 10px;
+    width: 100%;
 }
 footer .container{
     padding: 3rem;
