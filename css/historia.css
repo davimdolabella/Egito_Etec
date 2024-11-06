@@ -1,0 +1,28 @@
+#intro{
+    font-size: 7rem;
+    margin-top: 50vh;
+    
+}
+/***************** Media query *******************/
+@media  screen and (max-width:1200px) {
+    #intro{
+        font-size: 6rem;
+        margin-top: 50vh;
+        
+    }
+    
+}
+@media screen and (max-width:800px) {
+    #intro{
+        font-size: 4rem;
+        margin-top: 50vh;
+    }
+    /*** Hero ****/
+    .hero .container .content .text h1{
+        font-size: 4rem;
+        position: relative;
+        left: 0;
+        margin: .5rem 0;
+        margin-bottom: 1rem;
+     }
+}

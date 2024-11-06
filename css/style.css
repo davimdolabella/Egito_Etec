@@ -30,6 +30,7 @@ html {
 }
 .await{
     transition: all .5s ease-in-out;
+    opacity: 0;
 }
 @font-face{
     font-family: 'cinzel';
