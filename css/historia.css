@@ -1,6 +1,8 @@
 #intro{
     font-size: 7rem;
     margin-top: 50vh;   
+    background-image: url('../assets/história/bannerh.webp');
+    -webkit-text-fill-color:#59431bad;
 }
 /********* Hero ****************/
 .hero .container .content{
