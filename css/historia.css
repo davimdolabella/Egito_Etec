@@ -1,15 +1,43 @@
 #intro{
     font-size: 7rem;
-    margin-top: 50vh;
-    
+    margin-top: 50vh;   
 }
+/********* Hero ****************/
+.hero .container .content{
+    /* gap: 1rem; */
+    width: 85%;
+}
+
+.hero .container .content .text h1{
+    font-size: 6rem;
+    position: relative;
+    left: -10px;
+ }
+ .hero .container .content .text h2{
+    font-size: 2rem;
+    font-weight: 100;
+ }
+ .farao{
+    filter: drop-shadow(rgba(0, 0, 0, 0.55) 0px 5px 15px);
+    width: 100%;
+ }
+ .egito_img{
+    background-image: url('https://hav120151.wordpress.com/wp-content/uploads/2018/06/6e833d36df0a9b54cae47aa5b8ca5e90.jpg?w=1334&h=900&crop=1');
+}
+.egito_img::before{
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px);
+}
+
 /***************** Media query *******************/
 @media  screen and (max-width:1200px) {
     #intro{
         font-size: 6rem;
         margin-top: 50vh;
-        
     }
+    .hero .container .content .text h1{
+        font-size: 4rem;
+     }
     
 }
 @media screen and (max-width:800px) {
