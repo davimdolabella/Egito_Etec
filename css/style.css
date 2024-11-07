@@ -230,7 +230,7 @@ header .desktop{
     z-index: -1;
 }
 #intro{
-    transition: .5s ease;
+    transition:all .5s ease;
     margin-top: 55vh;
     text-align: center;
     font-size: 12rem;
@@ -557,7 +557,9 @@ footer .container .content .github:hover{
         left: -10px;
      }
      /*********** First_section *****/
-     
+     .first_section .text{
+        background-color: transparent;
+    }
 }
 @media screen and (max-width:995px) {
     .first_section{

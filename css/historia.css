@@ -22,7 +22,7 @@
     width: 100%;
  }
  .egito_img{
-    background-image: url('https://hav120151.wordpress.com/wp-content/uploads/2018/06/6e833d36df0a9b54cae47aa5b8ca5e90.jpg?w=1334&h=900&crop=1');
+    background-image: url('../assets/história/bannerh.webp');
 }
 .egito_img::before{
     background-color: rgba(0, 0, 0, 0.7);

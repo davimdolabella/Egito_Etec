@@ -43,5 +43,24 @@ icon.onclick = () =>{
    menu.classList.toggle('menu_animation')
    icon.classList.toggle('icon_animation')
 }
+/**********  Transição suave das paginas ******************/
+// Seleciona todos os links que devem ter a transição suave
+const smoothLinks = document.querySelectorAll('a');
+
+smoothLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+      if(!link.classList.contains('blank')){
+        event.preventDefault(); 
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+        setTimeout(() => {
+            window.location.href = this.href; 
+        }, 2200); 
+      }
+        
+    });
+});
 
 
