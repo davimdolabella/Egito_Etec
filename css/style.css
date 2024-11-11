@@ -372,6 +372,9 @@ footer .container .content .github:hover{
         display: block;
     }
     /************ Hero ******************/
+    .hero .content{
+        margin-top: 2rem;
+    }
     .hero .container .content .text h1{
         font-size: 7rem;
         position: relative;
