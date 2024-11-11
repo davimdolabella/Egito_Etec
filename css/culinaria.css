@@ -1,7 +1,7 @@
 #intro{
     font-size: 7rem;
     margin-top: 50vh;   
-    background-image: url('../assets/história/bannerh.webp');
+    background-image: url('../assets/culinaria/banner_comida.jpg');
     -webkit-text-fill-color:#59431bad;
 }
 /********* Hero ****************/
@@ -23,7 +23,7 @@
     width: 100%;
  }
  .egito_img{
-    background-image: url('https://www.egipto.com/wp-content/uploads/2022/03/comida-tipica-egipto.jpg');
+    background-image: url('../assets/culinaria/banner_comida.jpg');
 }
 .egito_img::before{
     background-color: rgba(0, 0, 0, 0.6);
