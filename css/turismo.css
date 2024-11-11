@@ -5,9 +5,7 @@
     -webkit-text-fill-color:#59431bad;
 }
 /********* Hero ****************/
-.farao{
-    position: relative;
-}
+
 .hero .container .content{
     width: 85%;
 }
@@ -22,8 +20,8 @@
     font-weight: 100;
  }
  .farao{
-
-    filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 5px 15px);
+    position: relative;
+    filter: drop-shadow(rgba(101, 101, 101, 0.55) 0px 5px 15px);
     width: 100%;
  }
  .egito_img{
