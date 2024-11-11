@@ -22,8 +22,8 @@
     font-weight: 100;
  }
  .farao{
-    
-    filter: drop-shadow(5px 5px 23px #0000004f);
+
+    filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 5px 15px);
     width: 100%;
  }
  .egito_img{

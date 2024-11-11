@@ -23,14 +23,19 @@
     width: 100%;
  }
  .egito_img{
-    background-image: url('../assets/história/bannerh.webp');
+    background-image: url('https://www.egipto.com/wp-content/uploads/2022/03/comida-tipica-egipto.jpg');
 }
 .egito_img::before{
-    background-color: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.6);
+
 }
 
 /***************** Media query *******************/
+@media screen and (max-width:1400px){
+    .hero .container .content .text h1{
+        font-size: 5rem;
+     }
+}
 @media  screen and (max-width:1200px) {
     #intro{
         font-size: 6rem;
@@ -40,6 +45,11 @@
         font-size: 4rem;
      }
     
+}
+@media screen and (max-width:995px) {
+    .hero .container .content .text h1{
+        font-size: 3rem;
+     }
 }
 @media screen and (max-width:800px) {
     #intro{
