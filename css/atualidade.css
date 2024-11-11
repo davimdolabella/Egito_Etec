@@ -1,7 +1,7 @@
 #intro{
     font-size: 7rem;
     margin-top: 50vh;   
-    background-image: url('../assets/história/bannerh.webp');
+    background-image: url('../assets/atualidades/bannera.jpg');
     -webkit-text-fill-color:#59431bad;
 }
 /********* Hero ****************/
@@ -21,16 +21,25 @@
  .farao{
     filter: drop-shadow(rgba(0, 0, 0, 0.55) 0px 5px 15px);
     width: 100%;
+    border-radius:50%;
+
  }
  .egito_img{
-    background-image: url('../assets/história/bannerh.webp');
+    background-image: url('../assets/atualidades/bannera.jpg');
 }
 .egito_img::before{
-    background-color: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur();
+ 
 }
 
 /***************** Media query *******************/
+@media  screen and (max-width:1400px) {
+    .hero .container .content .text h1{
+        font-size: 4.5rem;
+     }
+    
+}
 @media  screen and (max-width:1200px) {
     #intro{
         font-size: 6rem;
@@ -41,6 +50,12 @@
      }
     
 }
+@media screen and (max-width:995px) {
+    .hero .container .content .text h1{
+        font-size: 3rem;
+     }
+}
+
 @media screen and (max-width:800px) {
     #intro{
         font-size: 3rem;
