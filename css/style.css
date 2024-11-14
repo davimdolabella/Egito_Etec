@@ -86,7 +86,6 @@ header .desktop{
     transform: translateX(-50%) scaleX(0);
     transition: transform 0.3s ease-in-out;
     border-radius: 50%;
-
 }
 
 .desktop a:hover::after {
@@ -102,7 +101,6 @@ header .desktop{
     display: none;
 }
 .menu{
-    
     z-index: 990;
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(50px);
@@ -112,7 +110,6 @@ header .desktop{
     flex-direction: column;
     align-items: center;
     padding: 5rem;
-    
     height: calc(100vh - 107px);
     gap: 2rem;
     top: 107.5px;
@@ -292,6 +289,92 @@ header .desktop{
     font-size: 2rem;
     font-weight: 100;
  }
+ /**************** singles_section *****************/
+ section.singles_section{
+    padding: 3rem 0;
+}
+
+section.singles_section .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+section.singles_section .text{
+    color: rgb(201, 201, 201);
+    padding: 2rem ;
+    backdrop-filter: blur(35px);
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+section.singles_section .text h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+section.singles_section .text p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.single{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    color: rgb(231, 231, 231);
+    margin-bottom: 5rem;
+}
+.single.reverse{
+    flex-direction: row-reverse;
+}
+.single_text{
+    padding: 2rem;
+    padding-left: 4%;
+    border-radius: 10px;
+    width: 50%;
+    z-index: 2;
+}
+.single_text h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.single_text p{
+    font-size: 1.1rem;
+}
+.single_img{
+    color: rgb(225, 225, 225);
+    position: relative;
+    width: 40%;
+    height: 300px;
+    background-size: cover;
+}
+
+.single_img::after{
+    transition: .5s ease;
+    z-index: 1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.single_img:hover::after{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.211);
+    backdrop-filter: blur(15px);
+}
+.single_img p{
+    z-index: 2;
+    font-size: 1.5rem;
+    opacity: 0;
+}
+
+.single_img:hover p{
+    opacity: 1;
+}
  /**************** Footer **************************/
 footer{
     width: 100%;
@@ -333,7 +416,6 @@ footer .container .content .github div{
     width: 25px;
     height: 25px;
     border-radius: 50%;
-   
     background-image: url('../assets/images/github.webp');
     background-size: cover;
     background-position: center;
@@ -380,6 +462,26 @@ footer .container .content .github:hover{
         position: relative;
         left: -10px;
      }
+     /*********** singles_section ***********/
+
+     section.singles_section .content{
+        width: 60%;
+        max-width: 450px;
+    }
+    .single{
+        flex-direction: column;
+        padding: 0;
+    }
+    .single.reverse{
+        flex-direction: column;
+    }
+    .single_text{
+        width: 100%;
+        text-align: center;
+    }
+    .single_img{
+        width: 100%;
+    }
 }
 @media  screen and (max-width:800px) {
     body .container{
@@ -388,9 +490,7 @@ footer .container .content .github:hover{
     /************* INTRO ***************/
     #piramide_img.sticky{
         background-size: 3500%;
-    }
-
-    
+    } 
     #intro{
         font-size: 6rem;
     }
@@ -416,6 +516,22 @@ footer .container .content .github:hover{
      .bandeira_hero img{
         width: 100%;
      }
+     /******* singles_section **********/
+     section.singles_section .text h2{
+        font-size: 2.2rem;
+    }
+    section.singles_section .text p{
+        font-size: 1.1rem;
+    }
+    section.singles_section .content{
+        width: 100%;
+    }
+    .single_text h2{
+        font-size: 1.8rem;
+    }
+    .single_text p{
+        font-weight: 500;
+    }
      /***** Footer ********/
      footer .container .content .text{
         font-size: 1rem;

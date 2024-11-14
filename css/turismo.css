@@ -47,39 +47,24 @@
     height: 110vh;
     background-color: rgba(0, 0, 0, 0.35);
 }
-/********* First-Section ***************/
-section.first_section{
-    padding: 3rem 0;
+/*** Singles_section ************/
+.single_img.a{
+    background-image: url('../assets/turismo/balão.jpg');
 }
-
-section.first_section .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5rem;
+.single_img.b{
+    background-image: url('../assets/turismo/piramides.png');
 }
-section.first_section .text{
-    color: rgb(201, 201, 201);
-    padding: 2rem 2rem;
-    backdrop-filter: blur(55px);
+.single_img.c{
+    background-image: url('../assets/turismo/karnak.jpg');
 }
-section.first_section .text h2{
-    font-size: 4rem;
-    margin-bottom: 2rem;
+.single_img.d{
+    background-image: url('../assets/turismo/reis.webp');
 }
-section.first_section .text p{
-    font-size: 1.5rem;
-    font-weight: 500;
+.single_img.e{
+    background-image: url('../assets/turismo/abusimbel.jpg');
 }
-section.first_section .single{
-    color: rgb(201, 201, 201);
-    padding: 2rem 2rem;
-    backdrop-filter: blur(15px);
-}
-section.first_section .single .single_img{
-    background-image: url('https://www.dondeandoporai.com.br/wp-content/uploads/2012/05/Bal%C3%A3o-e-Ru%C3%ADnas.jpg');
-    background-position: center;
-    background-size: cover;
+.single_img.f{
+    background-image: url('../assets/turismo/dahab.png');
 }
 /***************** Media query *******************/
 @media  screen and (max-width:1200px) {
@@ -90,7 +75,6 @@ section.first_section .single .single_img{
     .hero .container .content .text h1{
         font-size: 4rem;
      }
-    
 }
 @media screen and (max-width:800px) {
     #intro{
