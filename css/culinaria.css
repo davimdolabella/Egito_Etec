@@ -1,10 +1,20 @@
 #intro{
     font-size: 7rem;
     margin-top: 50vh;   
-    background-image: url('../assets/culinaria/banner_comida.jpg');
+    background-image: url('../assets/culinaria/banner_comida.webp');
     -webkit-text-fill-color:#59431bad;
 }
+/********** Background Image *************/
+.background_image{
+    background-image: url('../assets/culinaria/banner_comida.webp');
+}
+.background_image::before{
+    background-color: rgba(0, 0, 0, 0.55);
+}
 /********* Hero ****************/
+.hero{
+    background: transparent;
+}
 .hero .container .content{
     width: 85%;
 }
@@ -23,11 +33,34 @@
     width: 100%;
  }
  .egito_img{
-    background-image: url('../assets/culinaria/banner_comida.jpg');
+    background: transparent;
 }
 .egito_img::before{
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: transparent;
 
+}
+/******* Singles **********/
+.single{
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.single_img.a{
+    background-image: url('../assets/culinaria/ful-medames.webp');
+    background-position: bottom;
+}
+.single_img.b{
+    background-image: url('../assets/culinaria/koshari.jpg');
+}
+.single_img.c{
+    background-image: url('../assets/culinaria/molokhia.avif');
+}
+.single_img.d{
+    background-image: url('../assets/culinaria/basbousa.avif');
+}
+.single_img.e{
+    background-image: url('../assets/culinaria/mahshi.jpg');
+}
+.single_img.f{
+    background-image: url('../assets/culinaria/konafa.jpg');
 }
 
 /***************** Media query *******************/

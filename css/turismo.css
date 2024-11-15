@@ -6,13 +6,7 @@
 }
 /******** Background Image *******/
 .background_image{
-    position: fixed;
-    width: 100%;
-    height: 110vh;
     background-image: url('../assets/turismo/bannert.jpg');
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
 }
 /********* Hero ****************/
 .hero{
@@ -39,14 +33,7 @@
 .egito_img::before{
     background-color: transparent;
 }
-.background_image::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 110vh;
-    background-color: rgba(0, 0, 0, 0.35);
-}
+
 /*** Singles_section ************/
 .single_img.a{
     background-image: url('../assets/turismo/balão.jpg');

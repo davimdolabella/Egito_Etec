@@ -239,6 +239,23 @@ header .desktop{
     -webkit-background-clip: text;
     -webkit-text-fill-color:rgba(133, 95, 14, 0.485);
 }
+/******* Background Image ************/
+.background_image{
+    position: fixed;
+    width: 100%;
+    height: 110vh;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.background_image::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 110vh;
+    background-color: rgba(0, 0, 0, 0.35);
+}
 /*************** HERO *****************/
 .banner{
     max-width: 100%;
