@@ -52,16 +52,20 @@
     background-image: url('../assets/história/antigo_imperio.avif');
 }
 .single_img.c{
-    background-image: url('../assets/culinaria/molokhia.avif');
+    background-image: url('../assets/história/medio_imperio.jpg');
 }
 .single_img.d{
-    background-image: url('../assets/culinaria/basbousa.avif');
+    background-image: url('../assets/história/novo_imperio.webp');
 }
 .single_img.e{
-    background-image: url('../assets/culinaria/mahshi.jpg');
+    background-image: url('../assets/história/helenistico.jpg');
 }
 .single_img.f{
-    background-image: url('../assets/culinaria/konafa.jpg');
+    background-image: url('../assets/história/egito_romano.webp');
+}
+.single_img.g{
+    background-image: url('../assets/história/egito_moderno.jpg');
+
 }
 
 
