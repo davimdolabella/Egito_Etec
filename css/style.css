@@ -4,6 +4,7 @@
     --color-3: #C27638;
     --color-4: #f8f6c0;
     --color-5: #400101;
+    --text-6: rgb(231, 231, 231);
 }
 *{
     box-sizing: border-box;
@@ -44,7 +45,7 @@ header{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(50px);
-    color: white;
+    color: var(--text-6);
     transition: 1.5s;
     opacity: 0;
 }
@@ -63,7 +64,7 @@ header .desktop{
     gap: 1.5rem;
 }
 .desktop a {
-    color: white;
+    color: var(--text-6);
     text-decoration: none;
     cursor: pointer;
     position: relative;
@@ -72,7 +73,7 @@ header .desktop{
 }
 .desktop a:hover{
     transform: scale(1.1);
-    color: white;
+    color: var(--text-6);
 }
 
 .desktop a::after {
@@ -125,7 +126,7 @@ header .desktop{
     transform: translateX(0);
 }
 .menu a {
-    color: white;
+    color: var(--text-6);
     text-decoration: none;
     cursor: pointer;
     position: relative;
@@ -134,7 +135,7 @@ header .desktop{
 }
 .menu a:hover{
     transform: scale(1.1);
-    color: white;
+    color: var(--text-6);
 }
 
 .menu a::after {
@@ -205,7 +206,7 @@ header .desktop{
     background-color: rgba(133, 95, 14, 0.485);
     top: 0;
     position: fixed;
-    background-image: url('../assets/svg/Piramides2.svg');
+    background-image: url('../assets/svg/Piramides.svg');
     background-size: 150%;
     background-position:58% 45.5%;
     background-repeat: no-repeat;
@@ -290,7 +291,7 @@ header .desktop{
     overflow-wrap: break-word;
  }
  .hero .container .content{
-    color: white;
+    color: var(--text-6);
     z-index: 2;
  }
 
@@ -319,10 +320,10 @@ section.singles_section .container{
 }
 
 section.singles_section .text{
-    color: rgb(201, 201, 201);
+    color: var(--text-6);
     padding: 2rem ;
     backdrop-filter: blur(35px);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.15);
     text-align: center;
 }
 section.singles_section .text h2{
@@ -341,7 +342,7 @@ section.singles_section .text p{
     z-index: 2;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(50px);
-    color: rgb(231, 231, 231);
+    color: var(--text-6);
     margin-bottom: 5rem;
 }
 .single.reverse{
@@ -362,7 +363,7 @@ section.singles_section .text p{
     font-size: 1.1rem;
 }
 .single_img{
-    color: rgb(225, 225, 225);
+    color: var(--text-6);
     position: relative;
     width: 40%;
     height: 300px;
@@ -409,7 +410,7 @@ footer::before{
 }
 footer .container{
     padding: 3rem;
-    color: rgb(239, 238, 238);
+    color: var(--text-6);
 }
 footer .container .content{
     display: flex;
