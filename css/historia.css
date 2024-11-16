@@ -4,7 +4,17 @@
     background-image: url('../assets/história/bannerh.webp');
     -webkit-text-fill-color:#59431bad;
 }
+/********** Background Image *************/
+.background_image{
+    background-image: url('../assets/história/bannerh.webp');
+}
+.background_image::before{
+    background-color: rgba(0, 0, 0, 0.7);
+}
 /********* Hero ****************/
+.hero{
+    background: transparent;
+}
 .hero .container .content{
     width: 85%;
 }
@@ -23,12 +33,37 @@
     width: 100%;
  }
  .egito_img{
-    background-image: url('../assets/história/bannerh.webp');
+    background: transparent;
 }
 .egito_img::before{
-    background-color: rgba(0, 0, 0, 0.7);
+    background: transparent;
 
 }
+/******* Singles **********/
+
+.single{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.single_img.a{
+    background-image: url('../assets/história/pre_dinastico.avif');
+    background-position: bottom;
+}
+.single_img.b{
+    background-image: url('../assets/história/antigo_imperio.avif');
+}
+.single_img.c{
+    background-image: url('../assets/culinaria/molokhia.avif');
+}
+.single_img.d{
+    background-image: url('../assets/culinaria/basbousa.avif');
+}
+.single_img.e{
+    background-image: url('../assets/culinaria/mahshi.jpg');
+}
+.single_img.f{
+    background-image: url('../assets/culinaria/konafa.jpg');
+}
+
 
 /***************** Media query *******************/
 @media  screen and (max-width:1200px) {
