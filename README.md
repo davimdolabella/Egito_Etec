@@ -1,5 +1,6 @@
 # Egito_Etec
 Site sobre o Egito como atividade avaliativa da matéria de Programação Web da Etec de Itapira.
+#### Para visitar o site [clique aqui](https://davimdolabella.github.io/Egito_Etec/) ⬅️
 ![Captura de tela 2024-11-17 200903](https://github.com/user-attachments/assets/9d664883-872a-4adb-9672-698fafe8d574)
 ![Captura de tela 2024-11-17 200535](https://github.com/user-attachments/assets/d565dc3c-a590-4ecd-8e4f-46a1591f80e4)
 ![Captura de tela 2024-11-17 200600](https://github.com/user-attachments/assets/de332fdb-2302-4581-a838-63cf7258f1ca)
