@@ -59,6 +59,7 @@
 }
 .single_img.e{
     background-image: url('../assets/história/helenistico.jpg');
+    background-position: center;
 }
 .single_img.f{
     background-image: url('../assets/história/egito_romano.webp');

@@ -153,8 +153,19 @@
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/aos.js"></script>
     <script>
-        /* Scroll animations */
-        AOS.init();
+        document.querySelectorAll('[data-aos]').forEach(element => {
+            if (window.innerWidth <= 768) {
+                const animationType = element.getAttribute('data-aos');
+                if (animationType === 'fade-right' || animationType === 'fade-left'|| animationType === 'fade-up') {
+                    element.setAttribute('data-aos', 'fade'); // Simplifica animação
+                }
+            }
+        });
+
+        AOS.init({
+            duration: 600,
+            easing: 'ease-in-out',
+        });
     </script>
 </body>
 </html>

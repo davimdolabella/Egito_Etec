@@ -6,6 +6,7 @@
     --color-5: #400101;
     --text-6: rgb(231, 231, 231);
 }
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -21,6 +22,7 @@ html {
     max-width: 1300px;
     width: 96%;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 .link{
     position: absolute;
@@ -453,12 +455,18 @@ footer .container .content .github:hover{
         background-color: rgba(133, 95, 14, 0.485);
         top: 0;
         position: fixed;
+        background-image: url('../assets/svg/Piramides.svg');
         background-size: 150%;
         background-position:58% 45.5%;
-        background-repeat: repeat;
+        background-repeat: no-repeat;
         width: 100%;
-        height: 101vh;
+        height: 100%;
         transition: all 1.5s ease;
+    }
+    #piramide_img{
+        background-repeat: repeat;
+        height: 101vh;
+
     }
     #intro{
         font-size: 8rem;

@@ -71,6 +71,7 @@
 }
 .single_img.h{
     background-image: url('../assets/atualidades/economia.jpg');
+    background-position: center;
 
 }
 /***************** Media query *******************/
