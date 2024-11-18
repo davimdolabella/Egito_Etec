@@ -364,7 +364,7 @@ section.singles_section .text p{
     font-weight: 500;
 }
 .single_text p{
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 .single_img{
     color: var(--text-6);
@@ -372,6 +372,9 @@ section.singles_section .text p{
     width: 40%;
     height: 300px;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .single_img::after{
