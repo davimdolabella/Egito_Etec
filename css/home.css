@@ -1,3 +1,6 @@
+body .container{
+    overflow-x:visible;
+}
 /***************   Section 1 ******************/
 .first_section{
     padding: 13rem 0;

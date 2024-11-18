@@ -22,7 +22,7 @@ html {
     max-width: 1300px;
     width: 96%;
     margin: 0 auto;
-
+    overflow-x: hidden;
 }
 .link{
     position: absolute;
@@ -448,9 +448,6 @@ footer .container .content .github:hover{
 
 /**************** Media query *******************/
 @media  screen and (max-width:1200px) {
-    .container {
-        overflow-x: hidden;
-    }
     /************INTRO *******************/
     #piramide_img{
         z-index: 999;
